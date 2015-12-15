@@ -8,23 +8,23 @@ provides-member:
 - ["C10RASUSLabos11AppDelegate", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UDPKlient"
-- "NSDate"
-- !private "print"
-- !private "exit"
-- !private "ServerNodesReader"
-- !private "BooleanLiteralType"
-- "failWithInstructions"
-- !private "readLine"
-- "AppDelegate"
-- !private "~="
-- !private "Senzor"
+- !private "sleep"
 - "UDPServer"
 - !private "Process"
-- !private "<"
-- "StringLiteralType"
+- !private "readLine"
+- !private "Senzor"
+- !private "BooleanLiteralType"
+- "failWithInstructions"
+- !private "print"
+- !private "~="
+- "AppDelegate"
+- !private "UDPKlient"
+- !private "ServerNodesReader"
+- !private "exit"
+- "NSDate"
 - !private "+"
-- !private "sleep"
+- "StringLiteralType"
+- !private "<"
 depends-member:
 - !private ["Ps9AnyObject", "AppDelegate"]
 - ["Ps9AnyObject", "NSDate"]

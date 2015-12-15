@@ -7,8 +7,8 @@ provides-member:
 - ["C10RASUSLabos6Sorter", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Sorter"
 - "Int"
+- "Sorter"
 depends-member:
 - ["Ps9AnyObject", "Int"]
 - ["Ps9AnyObject", "Sorter"]

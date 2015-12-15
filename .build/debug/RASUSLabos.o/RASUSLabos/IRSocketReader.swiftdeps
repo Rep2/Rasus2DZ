@@ -7,18 +7,18 @@ provides-member:
 - ["C10RASUSLabos14IRSocketReader", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "dispatch_async"
-- !private "dispatch_get_global_queue"
-- "BooleanLiteralType"
-- "UInt8"
-- "Array"
-- "IRSocket"
-- !private "DISPATCH_QUEUE_PRIORITY_BACKGROUND"
-- !private "FloatLiteralType"
-- "IRSocketReader"
-- !private "IntegerLiteralType"
-- "IRSockaddr"
 - "Void"
+- "IRSocket"
+- "IRSocketReader"
+- "BooleanLiteralType"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "DISPATCH_QUEUE_PRIORITY_BACKGROUND"
+- "Array"
+- "UInt8"
+- "IRSockaddr"
+- !private "dispatch_get_global_queue"
+- !private "dispatch_async"
 depends-member:
 - !private ["Ps9AnyObject", "DISPATCH_QUEUE_PRIORITY_BACKGROUND"]
 - !private ["Ps9AnyObject", "dispatch_async"]

@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- !private "+"
+- !private ">>"
 - "htons"
 - "CUnsignedShort"
-- !private "FloatLiteralType"
-- !private ">>"
-- !private "<<"
-- !private "IntegerLiteralType"
 - "ntohs"
+- !private "<<"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
+- !private "+"
 depends-member:
 depends-nominal:
 depends-dynamic-lookup:

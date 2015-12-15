@@ -32,14 +32,28 @@ class UDPServer{
             
             let socketReader = IRSocketReader(socket: socket)
             socketReader.read({
-                (data: Array<UInt8>, addr: IRSockaddr) -> Void in
+                (data: Array<UInt8>, senderAddr: IRSockaddr) -> Void in
                 
-                let (value, time, senderAddr) = UDPPacket.fromString(NSString(bytes: data, length: data.count, encoding: NSUTF8StringEncoding) as! String)
-                Sorter.instance.packets.append(value)
+                let packet = InPacket.fromString(NSString(bytes: data, length: data.count, encoding: NSUTF8StringEncoding) as! String)
                 
-                print("Recived value \(value) with time \(time) from 127.0.0.1:\(ntohs(senderAddr!.cSockaddr.sin_port)). Sending conformation.")
+                print("Recived value \(packet.value) with time \(packet.time) from 127.0.0.1:\(ntohs(packet.conformationAddr.cSockaddr.sin_port)). Sending conformation.")
+          
                 
-                self.socket.sendTo(senderAddr!, string: "\(time) 127.0.0.1 \(htons(addr.cSockaddr.sin_port))")
+                if Double(arc4random() % 1000) > (0.001 * 1000){
+                    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), {
+                        
+                        let delayTime = (Double(arc4random()) % (10000)) / 100000.0
+                        print("Conformation to port \(ntohs(packet.conformationAddr.cSockaddr.sin_port)) delayed \(delayTime)")
+                        
+                        usleep(UInt32(delayTime * 1000000.0))
+                        
+                        
+                        self.socket.sendTo(packet.conformationAddr, string: "\(packet.time) 127.0.0.1 \(ntohs(self.addr.cSockaddr.sin_port))")
+                    })
+                }else{
+                    print("Conformation to port \(ntohs(packet.conformationAddr.cSockaddr.sin_port)) ommited")
+                }
+                
             })
             
             print("Node server listening on port \(ntohs(addr.cSockaddr.sin_port))")

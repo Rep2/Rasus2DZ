@@ -7,11 +7,11 @@ provides-member:
 provides-dynamic-lookup:
 - "appendToRoute"
 depends-top-level:
-- "NSData"
 - !private "NSURL"
-- !private "print"
-- "String"
 - !private "NSFileHandle"
+- "String"
+- "NSData"
+- !private "print"
 - !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "NSFileHandle"]

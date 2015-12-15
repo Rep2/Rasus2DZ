@@ -7,20 +7,20 @@ provides-member:
 - ["C10RASUSLabos6Senzor", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Senzor"
 - !private "%"
-- !private "UnicodeScalarType"
-- "String"
-- "ExtendedGraphemeClusterType"
-- !private "print"
-- !private "NSUTF8StringEncoding"
-- !private "StringLiteralType"
-- !private "NSDate"
-- "Int"
 - !private "..<"
-- !private "=="
+- !private "print"
 - !private "exit"
+- !private "NSDate"
 - !private "AppDelegate"
+- "Senzor"
+- !private "=="
+- "String"
+- !private "UnicodeScalarType"
+- !private "NSUTF8StringEncoding"
+- "Int"
+- !private "StringLiteralType"
+- "ExtendedGraphemeClusterType"
 depends-member:
 - !private ["Vs12AnyGenerator", "Element"]
 - !private ["Ps9AnyObject", "AppDelegate"]

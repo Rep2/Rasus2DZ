@@ -7,12 +7,12 @@ provides-member:
 - ["C10RASUSLabos12OutUDPBuffer", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UDPPacket"
 - "FloatLiteralType"
+- "OutPacket"
 - "OutUDPBuffer"
 depends-member:
+- ["Ps9AnyObject", "OutPacket"]
 - ["Ps9AnyObject", "OutUDPBuffer"]
-- ["Ps9AnyObject", "UDPPacket"]
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]
 - ["Sa", "Generator"]
@@ -90,8 +90,8 @@ depends-member:
 - ["Ps16MutableSliceable", "SubSequence"]
 - ["Ps16MutableSliceable", "_Element"]
 - ["Ps16MutableSliceable", "init"]
+- ["C10RASUSLabos12OutUDPBuffer", "OutPacket"]
 - ["C10RASUSLabos12OutUDPBuffer", "OutUDPBuffer"]
-- ["C10RASUSLabos12OutUDPBuffer", "UDPPacket"]
 - ["C10RASUSLabos12OutUDPBuffer", "deinit"]
 - ["C10RASUSLabos12OutUDPBuffer", "init"]
 - ["C10RASUSLabos12OutUDPBuffer", "instance"]
@@ -215,4 +215,4 @@ depends-external:
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-interface-hash: "b438495bbba5420ae74e5768db9fbb27"
+interface-hash: "cbf1dd0cd74c375e88d7eaaeef821b4e"

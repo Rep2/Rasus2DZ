@@ -14,7 +14,7 @@ class OutUDPBuffer{
     
     var maxDelay = 0.5
     
-    var requestBuffer = [UDPPacket]()
+    var requestBuffer = [OutPacket]()
     
     
     

@@ -22,6 +22,8 @@ class UDPKlient{
     
     var counter:Int = 0
     
+    let bufferedUDP:BufferedUDP
+    
     init(nodes:[Node], senzor:Senzor){
         
         self.nodes = nodes
@@ -33,6 +35,8 @@ class UDPKlient{
             print("Klient socket creation failed")
             exit(1)
         }
+        
+        bufferedUDP = BufferedUDP(socket: socket)
         
         if let sock = IRSocket(domain: AF_INET, type: SOCK_DGRAM, proto: 0){
             conformationSocket = sock
@@ -50,18 +54,22 @@ class UDPKlient{
             socketReader.read({
                 (data: Array<UInt8>, addr: IRSockaddr) -> Void in
                 
-                let str = (NSString(bytes: data, length: data.count, encoding: NSUTF8StringEncoding) as! String).characters.split{$0 == " "}.map(String.init)
+                let packet = ConformationPacket.fromString((NSString(bytes: data, length: data.count, encoding: NSUTF8StringEncoding) as! String))
                 
-                let time = Int(str[0])!
-                let port = UInt16(str[2])!
+                print("Recived conformation for \(packet.time) from 127.0.0.1:\(ntohs(packet.senderAddr.cSockaddr.sin_port))")
                 
-                print("Recived conformation for \(time) from 127.0.0.1:\(port)")
+                self.bufferedUDP.recivedConformation(packet)
+                
             })
+            
+            bufferedUDP.startResend(7500000)
 
         }catch{
             print("Klient socket start failed")
             exit(1)
         }
+        
+         print("Client node started on port \(ntohs(conformationAddr.cSockaddr.sin_port))")
     }
     
     func send(){
@@ -69,30 +77,13 @@ class UDPKlient{
         let value = senzor.read()
         counter++;
         
-        print("Read value \(value). Sending..")
+        print("Read value \(value) with time \(counter). Sending..")
         
         for node in nodes{
+         
+            let packet = OutPacket(value: value, node: node, time: counter, conformationAddr: self.conformationAddr)
+            bufferedUDP.send(packet)
             
-            // Store packet for conformation
-            let packet = UDPPacket(value: value, node: node, time: counter, conformationAddr: conformationAddr)
-        
-            socket.sendTo(node.addr, string: packet.toString())
-            
-            
-            /*SimulatedUDP.instance.sendTo(udpSocket, packet: packet)
-            
-            OutUDPBuffer.instance.requestBuffer.append(packet)
-            
-            var addr = sockaddr_in()
-            let buffer:Array<UInt8> = Array(count: 100, repeatedValue: 0)
-            var src_addr_len = socklen_t(16)
-            
-            print("Listening for conformation on port \(AppDelegate.instance.node.port)")
-            
-            let len = withUnsafeMutablePointer(&addr) {
-                recvfrom(udpSocket , UnsafeMutablePointer<Void>(buffer), 100, 0, UnsafeMutablePointer($0), &src_addr_len)
-            }
-            */
             
         }
         

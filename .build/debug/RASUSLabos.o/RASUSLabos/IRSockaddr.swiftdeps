@@ -7,22 +7,22 @@ provides-member:
 - ["C10RASUSLabos10IRSockaddr", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "sizeof"
+- "IRSockaddr"
+- "FloatLiteralType"
+- "String"
+- !private "in_addr"
+- "UInt16"
+- !private "AF_INET"
+- "Int32"
+- !private "sa_family_t"
+- !private "StringLiteralType"
+- !private "htons"
+- !private "__uint8_t"
+- "sockaddr_in"
+- !private "ntohs"
 - "UInt32"
 - "IntegerLiteralType"
-- !private "sa_family_t"
-- !private "sizeof"
-- "sockaddr_in"
-- !private "__uint8_t"
-- !private "StringLiteralType"
-- !private "ntohs"
-- !private "in_addr"
-- "IRSockaddr"
-- "String"
-- "Int32"
-- "FloatLiteralType"
-- !private "AF_INET"
-- !private "htons"
-- "UInt16"
 depends-member:
 - !private ["Ps9AnyObject", "AF_INET"]
 - !private ["Ps9AnyObject", "__uint8_t"]

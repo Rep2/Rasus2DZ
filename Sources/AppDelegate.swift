@@ -47,8 +47,7 @@ class AppDelegate{
         print("Press a key to connect nodes and start process")
         
         let _ = readLine(stripNewline: true)
-        
-        print("Client node started")
+    
         
         // Fetches server nodes
         let serverNodes = ServerNodesReader (path: pathToNodesFile)

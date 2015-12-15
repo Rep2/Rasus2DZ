@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "String"
-- "Node"
-- "ExtendedGraphemeClusterType"
-- "UInt16"
 - "IRSockaddr"
+- "ExtendedGraphemeClusterType"
 - !private "FloatLiteralType"
+- "UInt16"
 - !private "=="
 - !private "IntegerLiteralType"
-- !private "UnicodeScalarType"
 - "UInt32"
+- "Node"
+- !private "UnicodeScalarType"
 - !private "StringLiteralType"
 depends-member:
 - !private ["Vs12AnyGenerator", "Element"]
