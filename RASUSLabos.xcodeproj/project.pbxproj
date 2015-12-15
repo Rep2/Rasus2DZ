@@ -7,7 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ADC1BABE1C1D8FF100435B2C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC1BABD1C1D8FF100435B2C /* main.swift */; };
+		AD0427CE1C1EF10000DCC251 /* ServerNodesReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0427CD1C1EF10000DCC251 /* ServerNodesReader.swift */; };
+		AD0427D01C1EF5C600DCC251 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0427CF1C1EF5C600DCC251 /* Node.swift */; };
+		AD0427D21C1EF62F00DCC251 /* Senzor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0427D11C1EF62F00DCC251 /* Senzor.swift */; };
+		AD0427D41C1EFCDC00DCC251 /* UDPKlient.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0427D31C1EFCDC00DCC251 /* UDPKlient.swift */; };
+		AD0427D61C1EFDAF00DCC251 /* UDPPacket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0427D51C1EFDAF00DCC251 /* UDPPacket.swift */; };
+		AD0F14621C1F324600625321 /* Sorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0F14611C1F324600625321 /* Sorter.swift */; };
+		AD0F14641C1F3D8000625321 /* SimulatedUDP.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0F14631C1F3D8000625321 /* SimulatedUDP.swift */; };
+		AD0F14661C1F3FE400625321 /* OutUDPBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0F14651C1F3FE400625321 /* OutUDPBuffer.swift */; };
+		AD4F98321C20973F00DA45D3 /* IRDataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F982D1C20973F00DA45D3 /* IRDataTransform.swift */; };
+		AD4F98331C20973F00DA45D3 /* IRSockaddr.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F982E1C20973F00DA45D3 /* IRSockaddr.swift */; };
+		AD4F98341C20973F00DA45D3 /* IRSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F982F1C20973F00DA45D3 /* IRSocket.swift */; };
+		AD4F98351C20973F00DA45D3 /* IRSocketReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F98301C20973F00DA45D3 /* IRSocketReader.swift */; };
+		AD4F98361C20973F00DA45D3 /* IRUDPSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4F98311C20973F00DA45D3 /* IRUDPSocket.swift */; };
+		ADC1BAC51C1D902400435B2C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC1BAC41C1D902400435B2C /* main.swift */; };
+		ADC1BAC71C1D955900435B2C /* IOFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC1BAC61C1D955900435B2C /* IOFile.swift */; };
+		ADC1BAC91C1D98FA00435B2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC1BAC81C1D98FA00435B2C /* AppDelegate.swift */; };
+		ADC1BACB1C1DBB9B00435B2C /* UDPServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC1BACA1C1DBB9B00435B2C /* UDPServer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +39,24 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD0427CD1C1EF10000DCC251 /* ServerNodesReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServerNodesReader.swift; path = Sources/ServerNodesReader.swift; sourceTree = SOURCE_ROOT; };
+		AD0427CF1C1EF5C600DCC251 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Node.swift; sourceTree = SOURCE_ROOT; };
+		AD0427D11C1EF62F00DCC251 /* Senzor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Senzor.swift; path = Sources/Senzor.swift; sourceTree = SOURCE_ROOT; };
+		AD0427D31C1EFCDC00DCC251 /* UDPKlient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UDPKlient.swift; path = Sources/UDPKlient.swift; sourceTree = SOURCE_ROOT; };
+		AD0427D51C1EFDAF00DCC251 /* UDPPacket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UDPPacket.swift; path = Sources/UDPPacket.swift; sourceTree = SOURCE_ROOT; };
+		AD0F14611C1F324600625321 /* Sorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sorter.swift; path = Sources/Sorter.swift; sourceTree = SOURCE_ROOT; };
+		AD0F14631C1F3D8000625321 /* SimulatedUDP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SimulatedUDP.swift; path = Sources/SimulatedUDP.swift; sourceTree = SOURCE_ROOT; };
+		AD0F14651C1F3FE400625321 /* OutUDPBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OutUDPBuffer.swift; path = Sources/OutUDPBuffer.swift; sourceTree = SOURCE_ROOT; };
+		AD4F982D1C20973F00DA45D3 /* IRDataTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IRDataTransform.swift; path = Sources/IRDataTransform.swift; sourceTree = SOURCE_ROOT; };
+		AD4F982E1C20973F00DA45D3 /* IRSockaddr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IRSockaddr.swift; path = Sources/IRSockaddr.swift; sourceTree = SOURCE_ROOT; };
+		AD4F982F1C20973F00DA45D3 /* IRSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IRSocket.swift; path = Sources/IRSocket.swift; sourceTree = SOURCE_ROOT; };
+		AD4F98301C20973F00DA45D3 /* IRSocketReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IRSocketReader.swift; path = Sources/IRSocketReader.swift; sourceTree = SOURCE_ROOT; };
+		AD4F98311C20973F00DA45D3 /* IRUDPSocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IRUDPSocket.swift; path = Sources/IRUDPSocket.swift; sourceTree = SOURCE_ROOT; };
 		ADC1BABA1C1D8FF100435B2C /* RASUSLabos */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RASUSLabos; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADC1BABD1C1D8FF100435B2C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		ADC1BAC41C1D902400435B2C /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = main.swift; path = Sources/main.swift; sourceTree = SOURCE_ROOT; };
+		ADC1BAC61C1D955900435B2C /* IOFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IOFile.swift; path = Sources/IOFile.swift; sourceTree = SOURCE_ROOT; };
+		ADC1BAC81C1D98FA00435B2C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Sources/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		ADC1BACA1C1DBB9B00435B2C /* UDPServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UDPServer.swift; path = Sources/UDPServer.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +70,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD4F98221C208CB600DA45D3 /* IRSocket */ = {
+			isa = PBXGroup;
+			children = (
+				AD4F982D1C20973F00DA45D3 /* IRDataTransform.swift */,
+				AD4F982E1C20973F00DA45D3 /* IRSockaddr.swift */,
+				AD4F982F1C20973F00DA45D3 /* IRSocket.swift */,
+				AD4F98301C20973F00DA45D3 /* IRSocketReader.swift */,
+				AD4F98311C20973F00DA45D3 /* IRUDPSocket.swift */,
+			);
+			name = IRSocket;
+			sourceTree = "<group>";
+		};
+		AD4F98371C209B1700DA45D3 /* UDP */ = {
+			isa = PBXGroup;
+			children = (
+				ADC1BACA1C1DBB9B00435B2C /* UDPServer.swift */,
+				AD0427D31C1EFCDC00DCC251 /* UDPKlient.swift */,
+			);
+			name = UDP;
+			sourceTree = "<group>";
+		};
+		AD4F98381C20A09C00DA45D3 /* HelperFunctions */ = {
+			isa = PBXGroup;
+			children = (
+				AD0427D11C1EF62F00DCC251 /* Senzor.swift */,
+				AD0427CD1C1EF10000DCC251 /* ServerNodesReader.swift */,
+				ADC1BAC41C1D902400435B2C /* main.swift */,
+				ADC1BAC61C1D955900435B2C /* IOFile.swift */,
+			);
+			name = HelperFunctions;
+			sourceTree = "<group>";
+		};
 		ADC1BAB11C1D8FF100435B2C = {
 			isa = PBXGroup;
 			children = (
@@ -57,7 +121,15 @@
 		ADC1BABC1C1D8FF100435B2C /* RASUSLabos */ = {
 			isa = PBXGroup;
 			children = (
-				ADC1BABD1C1D8FF100435B2C /* main.swift */,
+				AD4F98371C209B1700DA45D3 /* UDP */,
+				AD4F98221C208CB600DA45D3 /* IRSocket */,
+				AD4F98381C20A09C00DA45D3 /* HelperFunctions */,
+				ADC1BAC81C1D98FA00435B2C /* AppDelegate.swift */,
+				AD0427D51C1EFDAF00DCC251 /* UDPPacket.swift */,
+				AD0427CF1C1EF5C600DCC251 /* Node.swift */,
+				AD0F14611C1F324600625321 /* Sorter.swift */,
+				AD0F14631C1F3D8000625321 /* SimulatedUDP.swift */,
+				AD0F14651C1F3FE400625321 /* OutUDPBuffer.swift */,
 			);
 			path = RASUSLabos;
 			sourceTree = "<group>";
@@ -119,7 +191,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADC1BABE1C1D8FF100435B2C /* main.swift in Sources */,
+				AD0427D61C1EFDAF00DCC251 /* UDPPacket.swift in Sources */,
+				ADC1BAC51C1D902400435B2C /* main.swift in Sources */,
+				ADC1BAC71C1D955900435B2C /* IOFile.swift in Sources */,
+				AD0427D41C1EFCDC00DCC251 /* UDPKlient.swift in Sources */,
+				ADC1BACB1C1DBB9B00435B2C /* UDPServer.swift in Sources */,
+				AD4F98331C20973F00DA45D3 /* IRSockaddr.swift in Sources */,
+				AD4F98351C20973F00DA45D3 /* IRSocketReader.swift in Sources */,
+				AD0427D01C1EF5C600DCC251 /* Node.swift in Sources */,
+				AD0F14641C1F3D8000625321 /* SimulatedUDP.swift in Sources */,
+				AD0F14621C1F324600625321 /* Sorter.swift in Sources */,
+				AD0F14661C1F3FE400625321 /* OutUDPBuffer.swift in Sources */,
+				AD4F98361C20973F00DA45D3 /* IRUDPSocket.swift in Sources */,
+				ADC1BAC91C1D98FA00435B2C /* AppDelegate.swift in Sources */,
+				AD4F98321C20973F00DA45D3 /* IRDataTransform.swift in Sources */,
+				AD0427CE1C1EF10000DCC251 /* ServerNodesReader.swift in Sources */,
+				AD0427D21C1EF62F00DCC251 /* Senzor.swift in Sources */,
+				AD4F98341C20973F00DA45D3 /* IRSocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,14 +297,21 @@
 		ADC1BAC21C1D8FF100435B2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		ADC1BAC31C1D8FF100435B2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -239,6 +334,7 @@
 				ADC1BAC31C1D8FF100435B2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

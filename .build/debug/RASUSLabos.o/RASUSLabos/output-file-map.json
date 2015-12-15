@@ -1,0 +1,107 @@
+{
+  "": {
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/master.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/AppDelegate.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/AppDelegate.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/AppDelegate.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/AppDelegate.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/IOFile.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IOFile.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/IOFile.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IOFile~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IOFile.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/IRDataTransform.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRDataTransform.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/IRDataTransform.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRDataTransform~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRDataTransform.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/IRSockaddr.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRSockaddr.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/IRSockaddr.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRSockaddr~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRSockaddr.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/IRSocket.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRSocket.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/IRSocket.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRSocket~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRSocket.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/IRSocketReader.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRSocketReader.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/IRSocketReader.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRSocketReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRSocketReader.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/IRUDPSocket.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRUDPSocket.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/IRUDPSocket.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRUDPSocket~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/IRUDPSocket.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/main.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/main.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/main.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/main.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/Node.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/Node.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/Node.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/Node~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/Node.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/OutUDPBuffer.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/OutUDPBuffer.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/OutUDPBuffer.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/OutUDPBuffer~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/OutUDPBuffer.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/Senzor.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/Senzor.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/Senzor.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/Senzor~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/Senzor.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/ServerNodesReader.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/ServerNodesReader.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/ServerNodesReader.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/ServerNodesReader~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/ServerNodesReader.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/SimulatedUDP.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/SimulatedUDP.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/SimulatedUDP.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/SimulatedUDP~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/SimulatedUDP.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/Sorter.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/Sorter.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/Sorter.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/Sorter~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/Sorter.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/UDPKlient.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/UDPKlient.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/UDPKlient.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/UDPKlient~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/UDPKlient.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/UDPPacket.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/UDPPacket.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/UDPPacket.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/UDPPacket~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/UDPPacket.swiftdeps"
+  },
+  "/Users/rep/RASUSLabos/Sources/UDPServer.swift": {
+    "dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/UDPServer.d",
+    "object": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/Sources/UDPServer.swift.o",
+    "swiftmodule": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/UDPServer~partial.swiftmodule",
+    "swift-dependencies": "/Users/rep/RASUSLabos/.build/debug/RASUSLabos.o/RASUSLabos/UDPServer.swiftdeps"
+  }
+}

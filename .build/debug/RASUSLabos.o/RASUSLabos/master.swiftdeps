@@ -1,0 +1,21 @@
+version: "Apple Swift version 2.2-dev (LLVM 7bae82deaa, Clang 53d04af5ce, Swift 5995ef2acd)"
+options: "eb2d7f99519f6da4c919b7dd783db363"
+build_time: [503525765, 102747000]
+inputs:
+  "/Users/rep/RASUSLabos/Sources/AppDelegate.swift": [503523307, 0]
+  "/Users/rep/RASUSLabos/Sources/IOFile.swift": [503397757, 0]
+  "/Users/rep/RASUSLabos/Sources/IRDataTransform.swift": [503437740, 0]
+  "/Users/rep/RASUSLabos/Sources/IRSockaddr.swift": [503524649, 0]
+  "/Users/rep/RASUSLabos/Sources/IRSocket.swift": [503521660, 0]
+  "/Users/rep/RASUSLabos/Sources/IRSocketReader.swift": [503521207, 0]
+  "/Users/rep/RASUSLabos/Sources/IRUDPSocket.swift": [503437269, 0]
+  "/Users/rep/RASUSLabos/Sources/main.swift": [503324459, 0]
+  "/Users/rep/RASUSLabos/Sources/Node.swift": [503522825, 0]
+  "/Users/rep/RASUSLabos/Sources/OutUDPBuffer.swift": [503432527, 0]
+  "/Users/rep/RASUSLabos/Sources/Senzor.swift": [503414701, 0]
+  "/Users/rep/RASUSLabos/Sources/ServerNodesReader.swift": [503522825, 0]
+  "/Users/rep/RASUSLabos/Sources/SimulatedUDP.swift": [503432330, 0]
+  "/Users/rep/RASUSLabos/Sources/Sorter.swift": [503430571, 0]
+  "/Users/rep/RASUSLabos/Sources/UDPKlient.swift": [503525761, 0]
+  "/Users/rep/RASUSLabos/Sources/UDPPacket.swift": [503525514, 0]
+  "/Users/rep/RASUSLabos/Sources/UDPServer.swift": [503525577, 0]
