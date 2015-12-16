@@ -39,7 +39,7 @@ class IRSocket{
     func bind(addr:IRSockaddr, update:Bool = true) throws{
         
         let bindRet = withUnsafePointer(&addr.cSockaddr) {
-            Darwin.bind(cSocket, UnsafePointer<sockaddr>($0), 16)
+            bind(cSocket, UnsafePointer<sockaddr>($0), 16)
         }
         
         if bindRet != 0{
@@ -80,7 +80,7 @@ class IRSocket{
     func recive(maxLen: Int = 500, flag: Int32 = 0) -> Array<UInt8>{
         let buffer = Array<UInt8>(count: maxLen, repeatedValue: 0)
         
-        let count = Darwin.recv(cSocket, UnsafeMutablePointer<Void>(buffer), maxLen, flag)
+        let count = recv(cSocket, UnsafeMutablePointer<Void>(buffer), maxLen, flag)
         
         return Array(buffer[0..<count])
     }
