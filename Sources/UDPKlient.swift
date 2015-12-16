@@ -9,6 +9,8 @@
 import Foundation
 #if os(Linux)
     import Glibc
+    import socket.h
+    import types.h
 #else
     import Darwin.C
 #endif
