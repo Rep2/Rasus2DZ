@@ -9,7 +9,6 @@
 import Foundation
 #if os(Linux)
     import Glibc
-    import SystemConfiguration
 #else
     import Darwin.C
 #endif
