@@ -7,6 +7,11 @@
 //
 
 import Foundation
+#if os(Linux)
+    import Glibc
+#else
+    import Darwin.C
+#endif
 
 enum IRSocketError: ErrorType{
     case BindFailed(error: Int32)
@@ -39,7 +44,7 @@ class IRSocket{
     func bind(addr:IRSockaddr, update:Bool = true) throws{
         
         let bindRet = withUnsafePointer(&addr.cSockaddr) {
-            bind(cSocket, UnsafePointer<sockaddr>($0), 16)
+            Darwin.bind(cSocket, UnsafePointer<sockaddr>($0), 16)
         }
         
         if bindRet != 0{

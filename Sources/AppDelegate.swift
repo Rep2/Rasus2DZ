@@ -7,7 +7,12 @@
 //
 
 import Foundation
-import Glibc
+
+#if os(Linux)
+    import Glibc
+#else
+    import Darwin.C
+#endif
 
 class AppDelegate{
 
