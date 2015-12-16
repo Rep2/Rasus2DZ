@@ -21,6 +21,11 @@
 //  THE SOFTWARE.
 
 import Foundation
+#if os(Linux)
+    import Glibc
+#else
+    import Darwin.C
+#endif
 
 // MARK: - Error
 

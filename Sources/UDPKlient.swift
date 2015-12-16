@@ -7,6 +7,11 @@
 //
 
 import Foundation
+#if os(Linux)
+    import Glibc
+#else
+    import Darwin.C
+#endif
 
 /// Creates udp client socket and sends read data to other nodes
 /// Creates udp socket that recives data recived conformations

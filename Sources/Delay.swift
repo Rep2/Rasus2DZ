@@ -7,6 +7,11 @@
 //
 
 import Foundation
+#if os(Linux)
+    import Glibc
+#else
+    import Darwin.C
+#endif
 
 func delay(delay:Double, closure:()->()) {
     dispatch_after(
