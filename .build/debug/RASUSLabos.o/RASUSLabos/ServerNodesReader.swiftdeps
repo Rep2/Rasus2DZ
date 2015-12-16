@@ -7,16 +7,16 @@ provides-member:
 - ["C10RASUSLabos17ServerNodesReader", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- "String"
+- !private "!="
+- !private "AppDelegate"
+- !private "VectorTime"
+- !private "print"
 - !private "exit"
 - "ServerNodesReader"
-- !private "AppDelegate"
-- !private "!="
-- !private "VectorTime"
 - !private "NSUTF8StringEncoding"
-- "Node"
-- "String"
-- !private "print"
 - !private "StringLiteralType"
+- "Node"
 depends-member:
 - !private ["Ps9AnyObject", "AppDelegate"]
 - !private ["Ps9AnyObject", "NSUTF8StringEncoding"]

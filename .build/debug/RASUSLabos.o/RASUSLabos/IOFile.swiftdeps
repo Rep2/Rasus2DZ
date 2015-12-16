@@ -7,10 +7,10 @@ provides-member:
 provides-dynamic-lookup:
 - "appendToRoute"
 depends-top-level:
-- "NSData"
-- "String"
 - !private "print"
 - !private "NSURL"
+- "String"
+- "NSData"
 - !private "NSFileHandle"
 - !private "StringLiteralType"
 depends-member:

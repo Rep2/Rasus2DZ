@@ -7,8 +7,8 @@ provides-member:
 - ["C10RASUSLabos11IRUDPSocket", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "IRUDPSocket"
 - "IRSocket"
+- "IRUDPSocket"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", ""]

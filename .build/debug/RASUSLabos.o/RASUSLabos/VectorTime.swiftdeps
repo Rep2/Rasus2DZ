@@ -7,19 +7,19 @@ provides-member:
 - ["C10RASUSLabos10VectorTime", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
-- !private "JSON"
+- "String"
 - !private "Dictionary"
 - !private ">"
-- "String"
-- "Node"
-- !private "FloatLiteralType"
-- "AnyObject"
-- !private "=="
-- !private "IntegerLiteralType"
 - !private "ntohs"
+- "Int"
 - "VectorTime"
+- "AnyObject"
+- !private "FloatLiteralType"
+- !private "JSON"
+- !private "=="
 - "Double"
+- !private "IntegerLiteralType"
+- "Node"
 - !private "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "AnyObject"]

@@ -7,22 +7,22 @@ provides-member:
 - ["C10RASUSLabos10IRSockaddr", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "sockaddr_in"
+- "IntegerLiteralType"
+- "IRSockaddr"
+- "Int32"
+- !private "AF_INET"
 - "UInt16"
+- !private "sa_family_t"
+- !private "StringLiteralType"
+- !private "ntohs"
+- "sockaddr_in"
+- "UInt32"
+- !private "sizeof"
+- !private "__uint8_t"
 - "String"
 - !private "htons"
-- "FloatLiteralType"
-- !private "sa_family_t"
 - !private "in_addr"
-- "IntegerLiteralType"
-- "Int32"
-- "UInt32"
-- "IRSockaddr"
-- !private "AF_INET"
-- !private "ntohs"
-- !private "__uint8_t"
-- !private "sizeof"
-- !private "StringLiteralType"
+- "FloatLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "AF_INET"]
 - !private ["Ps9AnyObject", "__uint8_t"]
@@ -198,4 +198,4 @@ depends-external:
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-interface-hash: "1350bb7e7a8bd3b327907e20e481af7d"
+interface-hash: "6f6267f33b884c3c0225dcb6a5c58355"

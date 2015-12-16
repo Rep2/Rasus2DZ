@@ -5,15 +5,15 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- !private "DISPATCH_TIME_NOW"
-- !private "dispatch_time"
-- !private "Int64"
-- !private "*"
 - !private "NSEC_PER_SEC"
 - "Double"
 - !private "dispatch_get_main_queue"
-- !private "dispatch_after"
+- !private "DISPATCH_TIME_NOW"
+- !private "dispatch_time"
 - "delay"
+- !private "dispatch_after"
+- !private "*"
+- !private "Int64"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps22BidirectionalIndexType", "init"]
@@ -102,4 +102,4 @@ depends-external:
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-interface-hash: "a7d026115e4ab8a761c7ce6aa5646eb0"
+interface-hash: "17e5c4af28488f87d56d8154c4c45a46"

@@ -7,20 +7,20 @@ provides-member:
 - ["C10RASUSLabos6Senzor", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "Int"
-- "Senzor"
-- !private "%"
-- !private "print"
 - !private "=="
-- "String"
-- !private "exit"
-- !private "..<"
 - !private "AppDelegate"
-- "ExtendedGraphemeClusterType"
-- !private "UnicodeScalarType"
+- !private "%"
+- !private "NSDate"
+- "Senzor"
 - !private "NSUTF8StringEncoding"
 - !private "StringLiteralType"
-- !private "NSDate"
+- "ExtendedGraphemeClusterType"
+- "String"
+- !private "print"
+- !private "UnicodeScalarType"
+- "Int"
+- !private "exit"
+- !private "..<"
 depends-member:
 - !private ["Vs12AnyGenerator", "Element"]
 - !private ["Ps9AnyObject", "AppDelegate"]
@@ -468,4 +468,4 @@ depends-external:
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-interface-hash: "ac2bfd636036efb27940a78652c25a8a"
+interface-hash: "4f5bcd788369aa75c2d5fbd7ecb948c9"

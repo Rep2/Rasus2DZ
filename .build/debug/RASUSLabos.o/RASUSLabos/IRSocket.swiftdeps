@@ -10,38 +10,39 @@ provides-member:
 - ["C10RASUSLabos8IRSocket", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "Void"
 - !private "sendto"
-- !private "..<"
-- "String"
-- "IRSocket"
-- !private "IntegerLiteralType"
-- !private "=="
-- "Int32"
-- !private "withUnsafeMutablePointer"
-- "Bool"
-- !private "NSUTF8StringEncoding"
-- !private "socket"
 - "IRSockaddr"
-- "IRSocketError"
-- !private "UnsafeMutablePointer"
-- "BooleanLiteralType"
-- !private "Darwin"
 - "ErrorType"
-- "Int"
+- !private "recvfrom"
+- "Int32"
 - !private "FloatLiteralType"
+- !private "withUnsafeMutablePointer"
+- !private "!="
 - !private "sockaddr"
 - !private "UnsafePointer"
-- !private "!="
-- !private "Void"
-- !private "recvfrom"
+- "Bool"
+- "BooleanLiteralType"
+- !private "Darwin"
+- "UInt8"
+- "Array"
+- !private "recv"
+- !private "socket"
+- !private "..<"
+- !private "IntegerLiteralType"
+- !private "sockaddr_in"
+- !private "NSUTF8StringEncoding"
+- "IRSocketError"
+- !private "=="
+- !private "getsockname"
 - !private "close"
 - !private "withUnsafePointer"
-- "UInt8"
 - !private "socklen_t"
-- "Array"
-- !private "sockaddr_in"
 - !private "sizeofValue"
-- !private "getsockname"
+- !private "UnsafeMutablePointer"
+- "Int"
+- "String"
+- "IRSocket"
 depends-member:
 - !private ["Ps9AnyObject", "Array"]
 - !private ["Ps9AnyObject", "Darwin"]
@@ -57,6 +58,7 @@ depends-member:
 - !private ["Ps9AnyObject", "getsockname"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "lengthOfBytesUsingEncoding"]
+- !private ["Ps9AnyObject", "recv"]
 - !private ["Ps9AnyObject", "recvfrom"]
 - !private ["Ps9AnyObject", "sendto"]
 - !private ["Ps9AnyObject", "sizeofValue"]
@@ -183,6 +185,7 @@ depends-member:
 - ["C10RASUSLabos8IRSocket", "init"]
 - ["C10RASUSLabos8IRSocket", "recive"]
 - ["C10RASUSLabos8IRSocket", "reciveAndStoreAddres"]
+- !private ["C10RASUSLabos8IRSocket", "recv"]
 - !private ["C10RASUSLabos8IRSocket", "recvfrom"]
 - ["C10RASUSLabos8IRSocket", "sendTo"]
 - !private ["C10RASUSLabos8IRSocket", "sendto"]
@@ -486,4 +489,4 @@ depends-external:
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-interface-hash: "711ce2018bcb11b301cba908797c83cc"
+interface-hash: "e0694b99da83d572b4db61f02955a4ef"

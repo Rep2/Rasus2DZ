@@ -5,8 +5,8 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "appDelegate"
 - "AppDelegate"
+- "appDelegate"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["C10RASUSLabos11AppDelegate", "init"]

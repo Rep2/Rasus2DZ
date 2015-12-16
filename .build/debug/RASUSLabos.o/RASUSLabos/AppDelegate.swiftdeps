@@ -8,23 +8,23 @@ provides-member:
 - ["C10RASUSLabos11AppDelegate", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "failWithInstructions"
-- !private "BooleanLiteralType"
-- "UDPServer"
-- !private "Process"
-- !private "Senzor"
+- !private "sleep"
 - !private "readLine"
+- !private "Senzor"
+- !private "BooleanLiteralType"
 - !private "<"
+- !private "+"
 - !private "~="
 - "NSDate"
-- !private "+"
-- !private "sleep"
-- "AppDelegate"
-- !private "print"
-- "StringLiteralType"
-- !private "UDPKlient"
 - !private "ServerNodesReader"
+- !private "Process"
+- !private "UDPKlient"
+- "UDPServer"
+- "failWithInstructions"
+- "StringLiteralType"
 - !private "exit"
+- !private "print"
+- "AppDelegate"
 depends-member:
 - !private ["Ps9AnyObject", "AppDelegate"]
 - ["Ps9AnyObject", "NSDate"]
@@ -353,4 +353,4 @@ depends-external:
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-interface-hash: "f6eec4dd1ac150011021eaf1858cd992"
+interface-hash: "217da9963fb346bb82e356e1dcc48e4b"

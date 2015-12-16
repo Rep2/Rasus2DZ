@@ -7,16 +7,16 @@ provides-member:
 - ["V10RASUSLabos4Node", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "UInt16"
-- !private "FloatLiteralType"
+- "UInt32"
 - "Node"
 - "String"
+- !private "FloatLiteralType"
 - !private "UnicodeScalarType"
-- "IRSockaddr"
+- "ExtendedGraphemeClusterType"
 - !private "=="
 - !private "IntegerLiteralType"
-- "UInt32"
-- "ExtendedGraphemeClusterType"
+- "IRSockaddr"
+- "UInt16"
 - !private "StringLiteralType"
 depends-member:
 - !private ["Vs12AnyGenerator", "Element"]

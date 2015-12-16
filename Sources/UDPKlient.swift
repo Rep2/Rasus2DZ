@@ -32,8 +32,8 @@ class UDPKlient{
         
         self.nodes = nodes
         self.senzor = senzor
-        
-        if let sock = IRSocket(domain: AF_INET, type: SOCK_DGRAM, proto: 0){
+ 
+        if let sock = IRSocket(domain: 2, type: 2, proto: 0){
             socket = sock
         }else{
             print("Klient socket creation failed")
@@ -42,7 +42,7 @@ class UDPKlient{
         
         bufferedUDP = BufferedUDP(socket: socket)
         
-        if let sock = IRSocket(domain: AF_INET, type: SOCK_DGRAM, proto: 0){
+        if let sock = IRSocket(domain: 2, type: 2, proto: 0){
             conformationSocket = sock
         }else{
             print("Klient conformation socket creation failed")
