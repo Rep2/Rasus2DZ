@@ -7,11 +7,11 @@ provides-member:
 provides-dynamic-lookup:
 - "appendToRoute"
 depends-top-level:
+- "NSData"
+- "String"
+- !private "print"
 - !private "NSURL"
 - !private "NSFileHandle"
-- "String"
-- "NSData"
-- !private "print"
 - !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "NSFileHandle"]
@@ -82,6 +82,7 @@ depends-member:
 - !private ["Vs5Int32", "deinit"]
 - !private ["Vs5Int64", "deinit"]
 - !private ["Vs4Int8", "deinit"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "init"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["PSo8NSCoding", "NSFileHandle"]
 - !private ["PSo8NSCoding", "NSURL"]
@@ -187,6 +188,7 @@ depends-nominal:
 - !private "Vs5Int32"
 - !private "Vs5Int64"
 - !private "Vs4Int8"
+- !private "P10RASUSLabos17JSONSubscriptType"
 - !private "Ps14MirrorPathType"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"

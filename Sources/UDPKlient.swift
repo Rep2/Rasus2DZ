@@ -20,8 +20,6 @@ class UDPKlient{
     let nodes:[Node]
     let senzor:Senzor
     
-    var counter:Int = 0
-    
     let bufferedUDP:BufferedUDP
     
     init(nodes:[Node], senzor:Senzor){
@@ -75,13 +73,17 @@ class UDPKlient{
     func send(){
         
         let value = senzor.read()
-        counter++;
+        let time = FalseTime.instance.getTime()
         
-        print("Read value \(value) with time \(counter). Sending..")
+        print("Read value \(value) with time \(time). Sending..")
+        
+        VectorTime.instance.updateValue(time, port: Int(ntohs(AppDelegate.instance.server.addr.cSockaddr.sin_port)))
+        
+        Sorter.instance.addPacket(ValueWithTime(value: value, time: time, vectorTime: VectorTime.instance.nodesWithTime))
         
         for node in nodes{
          
-            let packet = OutPacket(value: value, node: node, time: counter, conformationAddr: self.conformationAddr)
+            let packet = OutPacket(value: value, node: node, time: time, vectorTime: VectorTime.instance.nodesWithTime, conformationAddr: self.conformationAddr)
             bufferedUDP.send(packet)
             
             

@@ -34,10 +34,18 @@ class UDPServer{
             socketReader.read({
                 (data: Array<UInt8>, senderAddr: IRSockaddr) -> Void in
                 
+                if VectorTime.instance == nil{
+                    let _ = ServerNodesReader (path: "config/nodes.txt")
+                }
+                
+                
                 let packet = InPacket.fromString(NSString(bytes: data, length: data.count, encoding: NSUTF8StringEncoding) as! String)
                 
                 print("Recived value \(packet.value) with time \(packet.time) from 127.0.0.1:\(ntohs(packet.conformationAddr.cSockaddr.sin_port)). Sending conformation.")
           
+                VectorTime.instance.updateAll(packet.vectorTime)
+            
+                Sorter.instance.addPacket(ValueWithTime(value: packet.value, time: packet.time, vectorTime: packet.vectorTime))
                 
                 if Double(arc4random() % 1000) > (0.001 * 1000){
                     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), {

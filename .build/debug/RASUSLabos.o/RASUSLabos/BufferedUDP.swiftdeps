@@ -7,28 +7,29 @@ provides-member:
 - ["C10RASUSLabos11BufferedUDP", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "OutPacket"
-- "BufferedUDP"
-- !private "print"
-- !private "*"
+- "StringLiteralType"
 - "UInt32"
-- !private "dispatch_get_global_queue"
+- !private "usleep"
+- !private "ntohs"
 - "BooleanLiteralType"
-- !private "dispatch_async"
+- !private "%"
 - !private "Double"
 - !private "FloatLiteralType"
-- "IRSocket"
-- !private "IntegerLiteralType"
-- !private "%"
+- !private "dispatch_get_global_queue"
 - !private "DISPATCH_QUEUE_PRIORITY_BACKGROUND"
+- "OutPacket"
+- "BufferedUDP"
 - !private "arc4random"
-- !private "ntohs"
-- !private "comparePackets"
-- !private ">"
-- !private "usleep"
-- "ConformationPacket"
+- !private "IntegerLiteralType"
+- !private "dispatch_async"
 - !private "/"
-- "StringLiteralType"
+- !private "*"
+- !private "comparePackets"
+- !private "print"
+- "IRSocket"
+- "Bool"
+- "ConformationPacket"
+- !private ">"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "DISPATCH_QUEUE_PRIORITY_BACKGROUND"]
@@ -78,6 +79,7 @@ depends-member:
 - !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
+- ["C10RASUSLabos11BufferedUDP", "Bool"]
 - ["C10RASUSLabos11BufferedUDP", "ConformationPacket"]
 - !private ["C10RASUSLabos11BufferedUDP", "DISPATCH_QUEUE_PRIORITY_BACKGROUND"]
 - !private ["C10RASUSLabos11BufferedUDP", "Double"]
@@ -181,6 +183,9 @@ depends-member:
 - ["Ps11IntegerType", "Distance"]
 - ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "init"]
+- ["P10RASUSLabos17JSONSubscriptType", "Distance"]
+- ["P10RASUSLabos17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "init"]
 - ["Ps14MirrorPathType", "Distance"]
 - ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "init"]
@@ -219,6 +224,7 @@ depends-member:
 - !private ["V10RASUSLabos4Node", "addr"]
 - !private ["Sq", "deinit"]
 - !private ["V10RASUSLabos9OutPacket", "reciverNode"]
+- !private ["V10RASUSLabos9OutPacket", "time"]
 - !private ["V10RASUSLabos9OutPacket", "toString"]
 - !private ["V10RASUSLabos9OutPacket", "value"]
 - !private ["Ps16OutputStreamType", "init"]
@@ -370,6 +376,7 @@ depends-nominal:
 - "Ps21IntegerArithmeticType"
 - "Ps25IntegerLiteralConvertible"
 - "Ps11IntegerType"
+- "P10RASUSLabos17JSONSubscriptType"
 - "Ps14MirrorPathType"
 - "Ps21MutableCollectionType"
 - "Ps16MutableIndexable"
@@ -443,4 +450,4 @@ depends-external:
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-interface-hash: "73296eb10e87ec9245737839394ce7ec"
+interface-hash: "717dc6eda78051cef7bcbefbdbefd2bf"

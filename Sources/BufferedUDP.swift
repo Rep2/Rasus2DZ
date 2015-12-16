@@ -18,9 +18,11 @@ class BufferedUDP{
     
     var outBuffer = [OutPacket]()
     
-    func send(packet: OutPacket){
+    func send(packet: OutPacket, store:Bool = true){
         
-        outBuffer.append(packet)
+        if store{
+            outBuffer.append(packet)
+        }
         
         if Double(arc4random() % 1000) > (0.3 * 1000){
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), {
@@ -62,8 +64,8 @@ class BufferedUDP{
     func resendBuffer(){
         for packet in outBuffer{
             
-            print("Resending value \(packet.value) to port \(ntohs(packet.reciverNode.addr.cSockaddr.sin_port))")
-            send(packet)
+            print("Resending value \(packet.value) with time \(packet.time) to port \(ntohs(packet.reciverNode.addr.cSockaddr.sin_port))")
+            send(packet, store: false)
             
         }
     }

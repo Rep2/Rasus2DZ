@@ -7,37 +7,42 @@ provides-member:
 - ["C10RASUSLabos9UDPServer", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "UInt8"
+- !private "UnicodeScalarType"
+- !private "dispatch_async"
+- !private "Array"
+- !private "/"
+- !private "SOCK_DGRAM"
+- !private "String"
+- !private "Sorter"
+- !private "FloatLiteralType"
+- !private "print"
+- !private "NSUTF8StringEncoding"
+- !private "Void"
+- "IRSockaddr"
+- "UDPServer"
+- !private "AF_INET"
+- !private "*"
 - !private "exit"
 - !private ">"
-- !private "SOCK_DGRAM"
-- !private "UInt32"
-- !private "UInt8"
-- !private "Array"
-- !private "IRSocketReader"
-- !private "AF_INET"
-- !private "%"
-- !private "FloatLiteralType"
-- !private "Void"
-- !private "DISPATCH_QUEUE_PRIORITY_BACKGROUND"
-- !private "arc4random"
-- !private "UnicodeScalarType"
-- !private "dispatch_get_global_queue"
 - !private "InPacket"
-- !private "String"
-- !private "dispatch_async"
-- !private "IntegerLiteralType"
-- "UDPServer"
-- !private "Double"
-- !private "NSString"
-- !private "/"
-- "IRSockaddr"
-- !private "NSUTF8StringEncoding"
-- !private "*"
-- !private "StringLiteralType"
-- "IRSocket"
 - !private "ntohs"
+- !private "ServerNodesReader"
+- !private "UInt32"
+- !private "NSString"
 - !private "usleep"
-- !private "print"
+- !private "IntegerLiteralType"
+- !private "ValueWithTime"
+- !private "=="
+- "IRSocket"
+- !private "StringLiteralType"
+- !private "%"
+- !private "VectorTime"
+- !private "arc4random"
+- !private "DISPATCH_QUEUE_PRIORITY_BACKGROUND"
+- !private "IRSocketReader"
+- !private "Double"
+- !private "dispatch_get_global_queue"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "AF_INET"]
@@ -50,7 +55,12 @@ depends-member:
 - !private ["Ps9AnyObject", "NSString"]
 - !private ["Ps9AnyObject", "NSUTF8StringEncoding"]
 - !private ["Ps9AnyObject", "SOCK_DGRAM"]
+- !private ["Ps9AnyObject", "ServerNodesReader"]
+- !private ["Ps9AnyObject", "Sorter"]
 - !private ["Ps9AnyObject", "UInt32"]
+- !private ["Ps9AnyObject", "ValueWithTime"]
+- !private ["Ps9AnyObject", "VectorTime"]
+- !private ["Ps9AnyObject", "addPacket"]
 - !private ["Ps9AnyObject", "addr"]
 - !private ["Ps9AnyObject", "appendToRoute"]
 - !private ["Ps9AnyObject", "arc4random"]
@@ -61,11 +71,13 @@ depends-member:
 - !private ["Ps9AnyObject", "dispatch_get_global_queue"]
 - !private ["Ps9AnyObject", "exit"]
 - !private ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instance"]
 - !private ["Ps9AnyObject", "ntohs"]
 - !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "read"]
 - !private ["Ps9AnyObject", "sendTo"]
 - !private ["Ps9AnyObject", "socket"]
+- !private ["Ps9AnyObject", "updateAll"]
 - !private ["Ps9AnyObject", "usleep"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Generator"]
@@ -154,6 +166,7 @@ depends-member:
 - !private ["V10RASUSLabos8InPacket", "fromString"]
 - !private ["V10RASUSLabos8InPacket", "time"]
 - !private ["V10RASUSLabos8InPacket", "value"]
+- !private ["V10RASUSLabos8InPacket", "vectorTime"]
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "SubSequence"]
@@ -174,6 +187,10 @@ depends-member:
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "init"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "Distance"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "dataUsingEncoding"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "init"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "dataUsingEncoding"]
@@ -228,11 +245,14 @@ depends-member:
 - !private ["Ps12SequenceType", "Index"]
 - !private ["Ps12SequenceType", "SubSequence"]
 - !private ["Ps12SequenceType", "count"]
+- !private ["C10RASUSLabos17ServerNodesReader", "init"]
 - !private ["Ps17SignedIntegerType", "Distance"]
 - !private ["Ps17SignedIntegerType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "Distance"]
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "init"]
+- !private ["C10RASUSLabos6Sorter", "addPacket"]
+- !private ["C10RASUSLabos6Sorter", "instance"]
 - !private ["Ps10Streamable", "dataUsingEncoding"]
 - !private ["Ps10Streamable", "init"]
 - !private ["Ps10Strideable", "Distance"]
@@ -255,9 +275,13 @@ depends-member:
 - !private ["C10RASUSLabos9UDPServer", "NSString"]
 - !private ["C10RASUSLabos9UDPServer", "NSUTF8StringEncoding"]
 - !private ["C10RASUSLabos9UDPServer", "SOCK_DGRAM"]
+- !private ["C10RASUSLabos9UDPServer", "ServerNodesReader"]
+- !private ["C10RASUSLabos9UDPServer", "Sorter"]
 - !private ["C10RASUSLabos9UDPServer", "String"]
 - !private ["C10RASUSLabos9UDPServer", "UInt32"]
 - !private ["C10RASUSLabos9UDPServer", "UInt8"]
+- !private ["C10RASUSLabos9UDPServer", "ValueWithTime"]
+- !private ["C10RASUSLabos9UDPServer", "VectorTime"]
 - !private ["C10RASUSLabos9UDPServer", "Void"]
 - ["C10RASUSLabos9UDPServer", "addr"]
 - !private ["C10RASUSLabos9UDPServer", "arc4random"]
@@ -280,6 +304,10 @@ depends-member:
 - !private ["Ps31UnicodeScalarLiteralConvertible", "dataUsingEncoding"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps19UnsignedIntegerType", "init"]
+- !private ["V10RASUSLabos13ValueWithTime", "init"]
+- !private ["C10RASUSLabos10VectorTime", "deinit"]
+- !private ["C10RASUSLabos10VectorTime", "instance"]
+- !private ["C10RASUSLabos10VectorTime", "updateAll"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
@@ -377,6 +405,7 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "P10RASUSLabos17JSONSubscriptType"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
@@ -395,8 +424,10 @@ depends-nominal:
 - !private "Ps21RandomAccessIndexType"
 - !private "Ps30RangeReplaceableCollectionType"
 - !private "Ps12SequenceType"
+- !private "C10RASUSLabos17ServerNodesReader"
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"
+- !private "C10RASUSLabos6Sorter"
 - !private "Ps10Streamable"
 - !private "Ps10Strideable"
 - !private "SS"
@@ -411,6 +442,8 @@ depends-nominal:
 - !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "Ps19UnsignedIntegerType"
+- !private "V10RASUSLabos13ValueWithTime"
+- !private "C10RASUSLabos10VectorTime"
 - !private "Ps10_ArrayType"
 - !private "Ps33_BuiltinBooleanLiteralConvertible"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"

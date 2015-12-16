@@ -7,16 +7,16 @@ provides-member:
 - ["V10RASUSLabos4Node", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "String"
-- "IRSockaddr"
-- "ExtendedGraphemeClusterType"
-- !private "FloatLiteralType"
 - "UInt16"
+- !private "FloatLiteralType"
+- "Node"
+- "String"
+- !private "UnicodeScalarType"
+- "IRSockaddr"
 - !private "=="
 - !private "IntegerLiteralType"
 - "UInt32"
-- "Node"
-- !private "UnicodeScalarType"
+- "ExtendedGraphemeClusterType"
 - !private "StringLiteralType"
 depends-member:
 - !private ["Vs12AnyGenerator", "Element"]
@@ -130,6 +130,10 @@ depends-member:
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "init"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "Distance"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "characters"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "init"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "characters"]
@@ -315,6 +319,7 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "P10RASUSLabos17JSONSubscriptType"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"

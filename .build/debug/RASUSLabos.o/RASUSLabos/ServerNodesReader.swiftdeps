@@ -7,23 +7,26 @@ provides-member:
 - ["C10RASUSLabos17ServerNodesReader", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "AppDelegate"
-- "String"
-- !private "!="
-- !private "print"
-- !private "NSUTF8StringEncoding"
 - !private "exit"
 - "ServerNodesReader"
-- !private "StringLiteralType"
+- !private "AppDelegate"
+- !private "!="
+- !private "VectorTime"
+- !private "NSUTF8StringEncoding"
 - "Node"
+- "String"
+- !private "print"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "AppDelegate"]
 - !private ["Ps9AnyObject", "NSUTF8StringEncoding"]
 - !private ["Ps9AnyObject", "Node"]
 - !private ["Ps9AnyObject", "String"]
+- !private ["Ps9AnyObject", "VectorTime"]
 - !private ["Ps9AnyObject", "addr"]
 - !private ["Ps9AnyObject", "cSockaddr"]
 - !private ["Ps9AnyObject", "exit"]
+- !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instance"]
 - !private ["Ps9AnyObject", "nodes"]
 - !private ["Ps9AnyObject", "print"]
@@ -88,6 +91,9 @@ depends-member:
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "Distance"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "init"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "init"]
@@ -121,6 +127,7 @@ depends-member:
 - !private ["C10RASUSLabos17ServerNodesReader", "NSUTF8StringEncoding"]
 - ["C10RASUSLabos17ServerNodesReader", "Node"]
 - ["C10RASUSLabos17ServerNodesReader", "String"]
+- !private ["C10RASUSLabos17ServerNodesReader", "VectorTime"]
 - ["C10RASUSLabos17ServerNodesReader", "deinit"]
 - !private ["C10RASUSLabos17ServerNodesReader", "exit"]
 - ["C10RASUSLabos17ServerNodesReader", "init"]
@@ -138,6 +145,7 @@ depends-member:
 - !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["C10RASUSLabos9UDPServer", "addr"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
+- !private ["C10RASUSLabos10VectorTime", "init"]
 - !private ["Ps10_ArrayType", "Generator"]
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "_Element"]
@@ -201,6 +209,7 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "P10RASUSLabos17JSONSubscriptType"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
@@ -220,6 +229,7 @@ depends-nominal:
 - !private "Ps24StringLiteralConvertible"
 - !private "C10RASUSLabos9UDPServer"
 - !private "Ps31UnicodeScalarLiteralConvertible"
+- !private "C10RASUSLabos10VectorTime"
 - !private "Ps10_ArrayType"
 - !private "Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible"
 - !private "Ps33_BuiltinIntegerLiteralConvertible"

@@ -5,15 +5,15 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- !private "dispatch_get_main_queue"
-- !private "dispatch_after"
-- !private "*"
-- !private "dispatch_time"
-- "delay"
-- !private "Int64"
 - !private "DISPATCH_TIME_NOW"
+- !private "dispatch_time"
+- !private "Int64"
+- !private "*"
 - !private "NSEC_PER_SEC"
 - "Double"
+- !private "dispatch_get_main_queue"
+- !private "dispatch_after"
+- "delay"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps22BidirectionalIndexType", "init"]

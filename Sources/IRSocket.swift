@@ -77,7 +77,7 @@ class IRSocket{
     /// - Parameter maxLen: maximum data length in bytes
     /// - Parameter flag: check http://linux.die.net/man/2/recvfrom
     /// - Return: recived byte array
-    func recive(maxLen: Int = 100, flag: Int32 = 0) -> Array<UInt8>{
+    func recive(maxLen: Int = 500, flag: Int32 = 0) -> Array<UInt8>{
         let buffer = Array<UInt8>(count: maxLen, repeatedValue: 0)
         
         let count = Darwin.recv(cSocket, UnsafeMutablePointer<Void>(buffer), maxLen, flag)
@@ -92,7 +92,7 @@ class IRSocket{
     /// - Parameter maxLen: maximum data length in bytes
     /// - Parameter flag: check http://linux.die.net/man/2/recvfrom
     /// - Return: recived byte array and sender address
-    func reciveAndStoreAddres(maxLen: Int = 100, flag: Int32 = 0) -> (Array<UInt8>, IRSockaddr){
+    func reciveAndStoreAddres(maxLen: Int = 500, flag: Int32 = 0) -> (Array<UInt8>, IRSockaddr){
         let buffer:Array<UInt8> = Array(count: maxLen, repeatedValue: 0)
         
         var sockLen = socklen_t(16)

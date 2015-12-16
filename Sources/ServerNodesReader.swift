@@ -14,7 +14,10 @@ class ServerNodesReader {
     
     init(path:String){
         do{
-            nodes =  Node.createNodesFromText(try String(contentsOfFile: path, encoding: NSUTF8StringEncoding)).filter({$0.addr.cSockaddr.sin_port != AppDelegate.instance.server.addr.cSockaddr.sin_port})
+            let allNodes = Node.createNodesFromText(try String(contentsOfFile: path, encoding: NSUTF8StringEncoding))
+            nodes =  allNodes.filter({$0.addr.cSockaddr.sin_port != AppDelegate.instance.server.addr.cSockaddr.sin_port})
+            
+            let _ = VectorTime(nodes: allNodes)
         }catch{
             print("Failed to fetch node list")
             exit(1)

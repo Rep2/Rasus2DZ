@@ -8,23 +8,23 @@ provides-member:
 - ["C10RASUSLabos11AppDelegate", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "sleep"
+- "failWithInstructions"
+- !private "BooleanLiteralType"
 - "UDPServer"
 - !private "Process"
-- !private "readLine"
 - !private "Senzor"
-- !private "BooleanLiteralType"
-- "failWithInstructions"
-- !private "print"
+- !private "readLine"
+- !private "<"
 - !private "~="
+- "NSDate"
+- !private "+"
+- !private "sleep"
 - "AppDelegate"
+- !private "print"
+- "StringLiteralType"
 - !private "UDPKlient"
 - !private "ServerNodesReader"
 - !private "exit"
-- "NSDate"
-- !private "+"
-- "StringLiteralType"
-- !private "<"
 depends-member:
 - !private ["Ps9AnyObject", "AppDelegate"]
 - ["Ps9AnyObject", "NSDate"]
@@ -147,6 +147,8 @@ depends-member:
 - !private ["Ps25IntegerLiteralConvertible", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "Distance"]
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "Distance"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps21MutableCollectionType", "Generator"]
@@ -292,6 +294,7 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "P10RASUSLabos17JSONSubscriptType"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"

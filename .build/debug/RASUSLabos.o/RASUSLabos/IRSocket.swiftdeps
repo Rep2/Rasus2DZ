@@ -10,38 +10,38 @@ provides-member:
 - ["C10RASUSLabos8IRSocket", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "UnsafeMutablePointer"
-- "IRSocket"
-- "Int"
-- !private "sockaddr"
-- !private "UnsafePointer"
-- !private "Void"
-- "Int32"
-- "BooleanLiteralType"
-- !private "!="
 - !private "sendto"
-- "ErrorType"
-- !private "Darwin"
+- !private "..<"
+- "String"
+- "IRSocket"
+- !private "IntegerLiteralType"
+- !private "=="
+- "Int32"
+- !private "withUnsafeMutablePointer"
+- "Bool"
+- !private "NSUTF8StringEncoding"
+- !private "socket"
 - "IRSockaddr"
 - "IRSocketError"
+- !private "UnsafeMutablePointer"
+- "BooleanLiteralType"
+- !private "Darwin"
+- "ErrorType"
+- "Int"
 - !private "FloatLiteralType"
-- !private "withUnsafeMutablePointer"
-- !private "NSUTF8StringEncoding"
-- !private "=="
-- "UInt8"
-- "Array"
-- !private "IntegerLiteralType"
-- !private "sockaddr_in"
-- !private "getsockname"
+- !private "sockaddr"
+- !private "UnsafePointer"
+- !private "!="
+- !private "Void"
 - !private "recvfrom"
-- !private "socket"
-- "Bool"
-- !private "withUnsafePointer"
-- !private "..<"
-- !private "socklen_t"
-- !private "sizeofValue"
 - !private "close"
-- "String"
+- !private "withUnsafePointer"
+- "UInt8"
+- !private "socklen_t"
+- "Array"
+- !private "sockaddr_in"
+- !private "sizeofValue"
+- !private "getsockname"
 depends-member:
 - !private ["Ps9AnyObject", "Array"]
 - !private ["Ps9AnyObject", "Darwin"]
@@ -222,6 +222,11 @@ depends-member:
 - !private ["Ps11IntegerType", "IntegerLiteralType"]
 - !private ["Ps11IntegerType", "_DisabledRangeIndex"]
 - !private ["Ps11IntegerType", "init"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "Distance"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "IntegerLiteralType"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "_DisabledRangeIndex"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "lengthOfBytesUsingEncoding"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "withCString"]
 - !private ["Ps14MirrorPathType", "Distance"]
 - !private ["Ps14MirrorPathType", "IntegerLiteralType"]
 - !private ["Ps14MirrorPathType", "_DisabledRangeIndex"]
@@ -412,6 +417,7 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "P10RASUSLabos17JSONSubscriptType"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
 - !private "Ps16MutableIndexable"
@@ -480,4 +486,4 @@ depends-external:
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2015-12-10-a.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
-interface-hash: "54e81a6254608b7342379f157381cbf8"
+interface-hash: "711ce2018bcb11b301cba908797c83cc"

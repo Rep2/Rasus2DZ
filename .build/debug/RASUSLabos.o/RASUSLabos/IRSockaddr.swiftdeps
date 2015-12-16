@@ -7,22 +7,22 @@ provides-member:
 - ["C10RASUSLabos10IRSockaddr", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "sizeof"
-- "IRSockaddr"
-- "FloatLiteralType"
-- "String"
-- !private "in_addr"
-- "UInt16"
-- !private "AF_INET"
-- "Int32"
-- !private "sa_family_t"
-- !private "StringLiteralType"
-- !private "htons"
-- !private "__uint8_t"
 - "sockaddr_in"
-- !private "ntohs"
-- "UInt32"
+- "UInt16"
+- "String"
+- !private "htons"
+- "FloatLiteralType"
+- !private "sa_family_t"
+- !private "in_addr"
 - "IntegerLiteralType"
+- "Int32"
+- "UInt32"
+- "IRSockaddr"
+- !private "AF_INET"
+- !private "ntohs"
+- !private "__uint8_t"
+- !private "sizeof"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "AF_INET"]
 - !private ["Ps9AnyObject", "__uint8_t"]
@@ -73,6 +73,7 @@ depends-member:
 - !private ["Ps21IntegerArithmeticType", "init"]
 - !private ["Ps25IntegerLiteralConvertible", "init"]
 - !private ["Ps11IntegerType", "init"]
+- !private ["P10RASUSLabos17JSONSubscriptType", "init"]
 - !private ["Ps14MirrorPathType", "init"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "init"]
@@ -138,6 +139,7 @@ depends-nominal:
 - !private "Ps21IntegerArithmeticType"
 - !private "Ps25IntegerLiteralConvertible"
 - !private "Ps11IntegerType"
+- !private "P10RASUSLabos17JSONSubscriptType"
 - !private "Ps14MirrorPathType"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
